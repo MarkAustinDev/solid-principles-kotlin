@@ -1,0 +1,5 @@
+package liskovSubstitution
+
+fun main(){
+
+}

@@ -43,3 +43,11 @@ This means that functions or base class methods should not get polluted with det
 For example, a Car class might have methods AccelerateAudi, AccelerateBMW, and so on. This is a violation of OCP. Instead, we should have an Car interface with method Accelerate. Each car subclass can implement this interface.
 
 OCP is important since classes may come to us via third-party libraries. We should be able to extend those classes without worrying if those base classes can support our extensions. But inheritance can lead to subclasses depending on base class implementation. To avoid this, use of interfaces is recommended. This additional abstraction leads to loose coupling.
+
+## Liskov Substitution (LSP)
+
+- We can substitute a subclass for its base class without affecting behaviour. This avoids misusing inheritance. It helps us conform to the "is-a" relationship. For example a Porsche "is-a" Car. Where porsche is the subclass and car is the base class. 
+
+-  We can also say that subclasses must fulfil a contract defined by the base class. 
+
+In another example, a subclass ToyPorsche that inherits from a base class Car is not exactly a car because as it can move like a car, but doesn't have an engine. So if a driving simulator instantiates a toy porsche duck and tries to rev the engine, it will encounter an error as a toy car does not have an engine. Thus, ToyPorsche as a subclass of Car is a violation of LSP. This is outlined in the code example with solution of how to solve this.
