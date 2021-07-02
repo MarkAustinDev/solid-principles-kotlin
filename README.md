@@ -60,3 +60,17 @@ In another example, a subclass ToyPorsche that inherits from a base class Car is
 
 This is a similar technique to LSP as instead of creating specific base classes for subclasses, we are creating 
 specific interfaces that are implemented by classes.
+
+
+## Dependency Inversion Principle (DIP)
+
+- High-level modules should not depend on low-level modules. Both should depend on abstractions (e.g. interfaces).
+
+- Abstractions should not depend on details. Details (concrete implementations) should depend on abstractions.
+
+A good way to solve a DIP violation is to follow the Open-Closed Principle. By taking the higher level class that is
+dependent on lower level classes and using Abstraction, we can decouple the dependencies on the lower level implementations.
+
+To apply abstraction, we convert the higher level class to an interface which allows lower level classes to implement 
+the functions defined in the interface. This decouples the dependencies and allows us to extend the higher level interface
+without having to make modifications (OCP).

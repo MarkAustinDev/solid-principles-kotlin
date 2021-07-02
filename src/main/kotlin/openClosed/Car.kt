@@ -16,7 +16,7 @@ interface Car {
 /**
  * The below implementation of the original Car class is open to modification in order to extend the functionality
  * as there are specific functions for each type of car. This is bad design as a new function would have to be created
- * for every new car. The above solution allows for an infinite number of subclasses to implement the interface and extend it.
+ * for every new car. The above solution.kt allows for an infinite number of subclasses to implement the interface and extend it.
  */
 //class Car {
 //
