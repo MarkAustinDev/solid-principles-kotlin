@@ -50,7 +50,7 @@ OCP is important since classes may come to us via third-party libraries. We shou
 
 -  We can also say that subclasses must fulfil a contract defined by the base class. 
 
-In another example, a subclass ToyPorsche that inherits from a base class Car is not exactly a car because as it can move like a car, but doesn't have an engine. So if a driving simulator instantiates a toy porsche duck and tries to rev the engine, it will encounter an error as a toy car does not have an engine. Thus, ToyPorsche as a subclass of Car is a violation of LSP. This is outlined in the code example with solution of how to solve this.
+In another example, a subclass ToyPorsche that inherits from a base class Car is not exactly a car because as it can move like a car, but doesn't have an engine. So if a driving simulator instantiates a toy porsche and tries to rev the engine, it will encounter an error as a toy car does not have an engine. Thus, ToyPorsche as a subclass of Car is a violation of LSP. This is outlined in the code example with solution of how to solve this.
 
 ## Interface Segregation (ISP)
 
